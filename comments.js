@@ -16,7 +16,7 @@ fetch('http://jsonplaceholder.typicode.com/posts').then(function(result) {
     var postText =
       '<article>' +
           '<h2 data-posts="title">' + post.title + '</h2>' +
-          '<p data-posts="body">' + post.body.replace('\n', '<br>'); + '</p>' +
+          '<p data-posts="body">' + post.body.replace('\n', '<br>') + '</p>' +
           '<button data-posts="id" value="' + post.id + '" type="button">Show comments</button>' +
       '</article>';
     $('body').append(postText);
